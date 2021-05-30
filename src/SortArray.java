@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class SortApp {
+public class SortArray {
     public static void main(String[] args) throws Exception {
 
         int[] m = {1, 4, 7, 32, 2, 4, 7, 9};
