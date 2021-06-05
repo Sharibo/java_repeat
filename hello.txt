@@ -1,1 +1,29 @@
 Привет из Java!
+
+* LICENSE contains information on licensing allowances and
+  limitations for this product and other Borland software
+  that is bundled with it.
+
+ The three files listed above, along with this file, are
+ installed to your main product directory (default:
+ C:\Program Files\Borland\Delphi6).
+
+ You can also find detailed information about new features
+ and compatibility issues in DEL6NEW.HLP, which is part of
+ the main online Help system (look for "What's New" in the
+ Help contents or index).
+
+* BDEREADME, BDEINST and BDEDEPLOY contain release notes,
+  installation, and deployment information about the
+  Borland Database Engine (BDE) and Borland SQL Links
+  products. These files are located in your main BDE
+  directory (installation default: c:\Program Files\Common
+  Files\Borland Shared\Bde).
+
+ IMPORTANT: Any BDE-related information in this README
+ overrides any corresponding information provided in the
+ BDE release notes.
+
+ Additional notes about existing issues with BDE and
+ utility applications supplied with BDE are covered in the
+ KNOWN ISSUES section later in this document.
