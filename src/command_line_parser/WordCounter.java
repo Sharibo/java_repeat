@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 public class WordCounter {
@@ -13,7 +13,7 @@ public class WordCounter {
     private String outFile;
     private static String testString = "Can i use this string in my program?\nYes, i can use it.";
 
-    Hashtable<String, Integer> words = new Hashtable<String, Integer>();
+    HashMap<String, Integer> words = new HashMap<String, Integer>();
 
 
     public WordCounter(String inFile, String outFile) {
@@ -22,7 +22,7 @@ public class WordCounter {
     }
 
 
-    public Hashtable<String, Integer> getWords() {
+    public HashMap<String, Integer> getWords() {
         return words;
     }
 
@@ -47,8 +47,7 @@ public class WordCounter {
                     String token = stkz.nextToken();
                     
                     if (words.containsKey(token)) {
-                        Object val = words.get(token);
-                        int n = (int) val;
+                        int n = words.get(token);
                         n++;
                         words.put(token, n);
                     } else {

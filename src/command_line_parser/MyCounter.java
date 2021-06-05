@@ -1,7 +1,7 @@
 package command_line_parser;
 
 import java.io.IOException;
-import java.util.Enumeration;
+import java.util.Map;
 
 public class MyCounter {
 
@@ -18,11 +18,10 @@ public class MyCounter {
             System.out.println(e.getMessage());
         }
 
-        Enumeration keys = wc.getWords().keys();
-        while (keys.hasMoreElements()) {
-            String w = keys.nextElement().toString();
-            int n = (int) wc.getWords().get(w);
-            System.out.println(w + "   " + n);
+        
+        for ( Map.Entry<String, Integer> entry : wc.getWords().entrySet() ) {
+            System.out.println(entry.getKey() + "   " + entry.getValue());
         }
+
     }
 }
