@@ -6,6 +6,7 @@ import java.io.Reader;
 import java.io.StringReader;
 import java.util.HashMap;
 import java.util.StringTokenizer;
+import java.util.Vector;
 
 public class WordCounter {
 
@@ -14,6 +15,7 @@ public class WordCounter {
     private static String testString = "Can i use this string in my program?\nYes, i can use it.";
 
     HashMap<String, Integer> words = new HashMap<String, Integer>();
+    Vector<IWordCounter> listeners = new Vector<IWordCounter>();
 
 
     public WordCounter(String inFile, String outFile) {
@@ -26,7 +28,21 @@ public class WordCounter {
         return words;
     }
 
+    public void addListener(IWordCounter iWordCounter) {
+        listeners.add(iWordCounter);
+    }
 
+    public void delListener(IWordCounter iWordCounter) {
+        listeners.remove(iWordCounter);
+    }
+
+    protected void fireCounter(int size) {
+        for (IWordCounter iWordCounter : listeners) {
+            iWordCounter.counted(this, size);
+        }
+    };
+    
+    
     public void countWords() throws IOException {
         Reader reader;
         int num = 0;
@@ -64,7 +80,9 @@ public class WordCounter {
             System.out.println(e.getMessage());
         }
 
-        System.out.println("num = " + num);
+        // System.out.println("num = " + num);
+
+        fireCounter(num);
     }    
 
 }
