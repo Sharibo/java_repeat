@@ -19,7 +19,6 @@ public class TicTak {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         
     }
 }
