@@ -21,8 +21,9 @@ public class ThreadTwo implements Runnable {
 
                 synchronized (monitor) {
                     monitor.notify();
-                    if (i < TicTak.num - 1)
+                    if (i < TicTak.num - 1) {
                         monitor.wait();
+                    }
                 }
 
             }
