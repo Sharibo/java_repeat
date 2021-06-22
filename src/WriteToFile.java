@@ -33,7 +33,7 @@ public class WriteToFile {
         new BufferedReader(new InputStreamReader(new FileInputStream(stringtxt), "UTF-8"));
         //new BufferedReader(new FileReader(stringtxt));
 
-        String str = reader.readLine();
+        String str = reader.readLine(); 
         return str;
 
     }
