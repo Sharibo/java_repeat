@@ -1,14 +1,5 @@
-## Getting Started
+# Java repeat
+It is many small java-projects in one directory. I did this work on the basis of the **[spezialist](https://www.specialist.ru/) java courses levels 1 and 2.**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+I repeated java-syntax, collections and sorting, files and streams, threads, databases connection and sql-cueries. I learned a couple of patterns, swing and javaFX. Swing and javaFX are also located in separate repositories: [swing_write_read](https://github.com/Sharibo/swing_write_read), [swing_box](https://github.com/Sharibo/swing_box), [java_fx](https://github.com/Sharibo/java_fx)
